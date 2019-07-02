@@ -60,6 +60,10 @@ export default new Vuex.Store({
     todos: state =>
       state.todos.filter(todo => {
         return !todo.completed;
+      }),
+    completedTodos: state =>
+      state.todos.filter(todo => {
+        return todo.completed;
       })
   }
 });
