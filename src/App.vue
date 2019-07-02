@@ -1,11 +1,21 @@
 <template>
-  <div id="app"></div>
+  <div id="app">
+    <GetToDo></GetToDo>
+    <CurrentToDos></CurrentToDos>
+  </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import GetToDo from "./components/GetToDo.vue";
+import CurrentToDos from "./components/CurrentToDos.vue";
 
-export default {};
+export default {
+  name: "ToDo",
+  components: {
+    GetToDo,
+    CurrentToDos
+  }
+};
 </script>
 
 <style>
